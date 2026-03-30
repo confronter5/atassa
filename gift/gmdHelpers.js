@@ -76,15 +76,14 @@ function setupConsoleFilters() {
 setupConsoleFilters();
 
 const createContext = async (userJid, options = {}) => {
-    const botName = (await getSetting("BOT_NAME")) || "𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃";
+    const botName = (await getSetting("BOT_NAME")) || "𝐃𝐞𝐚𝐝 𝐊𝐢𝐧𝐠";
     const botPic =
         (await getSetting("BOT_PIC")) ||
-        "https://gitcdn.giftedtech.co.ke/image/AZO_image.jpg";
+        "https://files.catbox.moe/trg1yl.jpg";
     const newsletterJid =
-        (await getSetting("NEWSLETTER_JID")) || "120363403054496228@newsletter";
+        (await getSetting("NEWSLETTER_JID")) || "120363409408842982@newsletter";
     const newsletterUrl =
-        (await getSetting("NEWSLETTER_URL")) ||
-        "https://whatsapp.com/channel/0029Vb6lNd511ulWbxu1cT3A";
+        (await getSetting("NEWSLETTER_URL")) ||"https://whatsapp.com/channel/0029VbCT5LbCsU9GiA01Nv2L";
 
     return {
         contextInfo: {
@@ -101,7 +100,7 @@ const createContext = async (userJid, options = {}) => {
             },
             externalAdReply: {
                 title: options.title || botName,
-                body: options.body || "Powered by GiftedTech",
+                body: options.body || "Powered by Deadking",
                 thumbnailUrl: botPic,
                 mediaType: 1,
                 mediaUrl: options.mediaUrl || botPic,
@@ -114,12 +113,12 @@ const createContext = async (userJid, options = {}) => {
 };
 
 const createContext2 = async (userJid, options = {}) => {
-    const botName = (await getSetting("BOT_NAME")) || "𝐆𝐈𝐅𝐓𝐄𝐃 𝐌𝐃";
+    const botName = (await getSetting("BOT_NAME")) || "𝐃𝐄𝐀𝐃 𝐊𝐈𝐍𝐆";
     const botPic =
         (await getSetting("BOT_PIC")) ||
-        "https://gitcdn.giftedtech.co.ke/image/AZO_image.jpg";
+        "https://files.catbox.moe/trg1yl.jpg";
     const newsletterJid =
-        (await getSetting("NEWSLETTER_JID")) || "120363403054496228@newsletter";
+        (await getSetting("NEWSLETTER_JID")) || "120363409408842982@newsletter";
 
     return {
         contextInfo: {
@@ -133,7 +132,7 @@ const createContext2 = async (userJid, options = {}) => {
             },
             externalAdReply: {
                 title: options.title || botName,
-                body: options.body || "Powered by Gifted Tech",
+                body: options.body || "Powered by Dead King",
                 thumbnailUrl: botPic,
                 mediaType: 1,
                 showAdAttribution: true,
